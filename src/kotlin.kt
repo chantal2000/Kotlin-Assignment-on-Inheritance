@@ -25,7 +25,7 @@ open class Vehicle(var make:String,var model:String,var color:String,var capacit
     }
         fun maxTripFare(fare:Double):Double{
             var trip=3
-            return fare*trip
+            return fare*1/trip
         }
     }
 
@@ -38,6 +38,6 @@ fun main(){
     var bu=Bus("subaru","legacy","White",50)
     bu.calculateParkingFees(5)
     println(bu.calculateParkingFees(5))
-    println(bu.maxTripFare(2.345621))
+    println(bu.maxTripFare(5.345621))
 
 }
